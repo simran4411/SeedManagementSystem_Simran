@@ -1,0 +1,50 @@
+﻿@model SeedManagementSystem_Simran.Models.BankPayment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BankPayment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransactionDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransactionNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AmountReceived)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AmountReceived)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
